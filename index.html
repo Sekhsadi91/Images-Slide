@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Slide js </title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .img-slide img{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            transition: all 0.4s ;
+           
+        }
+         .btn-style{
+            padding:10px 30px;
+            background-color: orange;
+            color: #000;
+            border: 2px solid orange;
+            transition: all 0.4s ease-in;
+            cursor: pointer;
+
+        }
+         .btn-style:hover {
+            background-color: #fff;
+            color:#000;
+            box-shadow: 8px 2px 4px rgb(41, 38, 37);
+        }
+         .btn-one{
+            position: absolute;
+            left:0;
+         top: 330px;
+        }
+         #btn-two{
+            position: absolute;
+            top: 330px;
+            right: 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <button class="btn-style btn-one" onclick="prev()">Previus</button>
+    <button class="btn-style" id="btn-two" onclick="next()">Next</button>
+    
+    <div class="img-slide">
+       
+
+        <img  id="img" src="img/01.webp" alt="" width="800px" height="300px">
+    </div>
+    
+    <script src="dom_slide.js"></script>
+</body>
+</html>
